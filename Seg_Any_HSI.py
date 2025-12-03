@@ -107,7 +107,7 @@ mask_generator = SamAutomaticMaskGenerator(
     model=HyperFree,
     pred_iou_thresh=pred_iou_thresh,
     stability_score_thresh=stability_score_thresh,
-    points_per_side = 32, # set 48 or 64 for more masks
+    points_per_side = 48, # set 48 or 64 for more masks
 )
 
 masks = mask_generator.generate(img, wavelengths, GSD=GSD)
