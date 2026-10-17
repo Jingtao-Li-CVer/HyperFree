@@ -78,7 +78,7 @@ ratio = 1024 / (max(height, width))
 GSD = GSD / ratio
 GSD = torch.tensor([GSD])
 
-HyperFree = HyperFree_model_registry["vit_b"](checkpoint=ckpt_pth, image_size=1024, vit_patch_size=4, encoder_global_attn_indexes=[5, 8, 11], merge_indexs = [2, 4, 7]).to(device)
+HyperFree = HyperFree_model_registry["vit_b"](checkpoint=ckpt_pth, image_size=1024, vit_patch_size=16, encoder_global_attn_indexes=[2, 5, 8, 11], merge_indexs = None).to(device)
 HyperFree = HyperFree.to(device)
 predictor = HyperFree_Predictor(HyperFree)
 predictor.set_image(img, False, wavelengths, GSD,)
