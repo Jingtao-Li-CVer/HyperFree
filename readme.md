@@ -30,6 +30,12 @@
 </p >
 
 # 🔥 Update
+**2026.10.22**
+- We have uploaded a new mask version for HyperSeg with location information in **([Hyper-Seg](https://www.wjx.cn/vm/e84nlpp.aspx#))**.
+
+**2026.7.27**
+- We have uploaded HyperImageNet, the largest hyperspectral benchmark with 26,084 airborne hyperspectral image patches, 224 spectral bands, and 138 fine-grained land-cover categories. **([HyperImageNet](https://arxiv.org/abs/2607.21050))**.
+  
 **2025.04.23**
 - Bugs are fixed for tuning-free classification and detection tasks.
   
